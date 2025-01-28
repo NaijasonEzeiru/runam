@@ -9,64 +9,71 @@
   </head>
   <body class="bg-white text-black text-sm md:text-lg">
     <header
-      class="flex items-end h-24 pb-2 md:items-center md:border-b justify-between bg-white px-11 md:px-36 min-[1200px]:px-36 md:h-36 w-full z-50 fixed top-0 text-lg"
-      id="nav-header">
-      <a href="index.html" class="flex gap-1 items-center">
+      class="flex items-end h-24 pb-2 md:items-center justify-between px-11 md:px-36 min-[1200px]:px-36 md:h-36 w-full z-50 fixed bg-[#5C0404] top-0 text-white text-lg"
+      id="nav-header"
+    >
+      <a href="index.html" class="flex gap-6">
         <img
-          src="./public/runam.png"
+          src="./public/runam.svg"
           alt="runam logo"
-          class="hidden min-[1200px]:block" />
+          class="hidden min-[1200px]:block"
+        />
         <span class="flex">
-          <p class="min-[1200px]:text-xl font-medium">Runam</p><p>&reg;</p>
+          <p class="lg:text-3xl font-medium">Runam</p>
         </span>
       </a>
       <nav
         id="nav-bar"
-        class="flex bg-white gap-2 w-full left-0 top-24 md:top-36 absolute md:pl-32 transition-transform z-50 flex-col py-8 px-6 min-[1200px]:w-auto min-[1200px]:static min-[1200px]:bg-transparent min-[1200px]:flex-row min-[1200px]:translate-x-0 min-[1200px]:py-0 -translate-x-full">
+        class="flex bg-[#5C0404] gap-2 w-full top-24 md:top-36 left-0 absolute md:pl-32 transition-transform z-50 flex-col py-8 px-6 min-[1200px]:w-auto min-[1200px]:static min-[1200px]:bg-transparent min-[1200px]:flex-row min-[1200px]:translate-x-0 min-[1200px]:py-0 -translate-x-full"
+      >
         <a href="about-us.html" class="hover:text-[#FA8809]">
-          <p class="table px-3 w-full cursor-pointer">About us</p>
+          <p class="table px-3 w-full cursor-pointer">About</p>
         </a>
-        <hr class="opacity-40" />
+        <hr class="opacity-20" />
         <a href="contact-us.html" class="hover:text-[#FA8809]">
-          <p class="table px-3 w-full cursor-pointer">Contact us</p>
+          <p class="table px-3 w-full cursor-pointer">Contact</p>
         </a>
-        <hr class="opacity-40" />
-        <a href="vision-statement.html" class="hover:text-[#FA8809]">
+        <!-- <hr class="opacity-20" /> -->
+        <!-- <a href="vision-statement.html" class="hover:text-[#FA8809]">
           <p class="table px-3 w-full cursor-pointer">Vision</p>
-        </a>
-        <hr class="opacity-40" />
+        </a> -->
+        <hr class="opacity-20" />
         <a href="privacy-policy.html" class="hover:text-[#FA8809]">
           <p class="table px-3 w-full cursor-pointer">Privacy policy</p>
         </a>
-        <hr class="opacity-40" />
-        <a href="terms-of-service.html" class="hover:text-[#FA8809]">
+        <hr class="opacity-20" />
+        <!-- <a href="terms-of-service.html" class="hover:text-[#FA8809]">
           <p class="table px-3 w-full cursor-pointer">Terms of service</p>
-        </a>
-        <hr class="opacity-40" />
+        </a> -->
+        <hr class="opacity-20" />
       </nav>
       <button
         id="menu-icon"
         aria-expanded="false"
-        class="group border border-black h-8 px-2 relative bg-transparent min-[1200px]:hidden rounded-lg">
+        class="group border border-white h-8 px-2 relative bg-transparent min-[1200px]:hidden rounded-lg"
+      >
         <span
           id="menu-shape"
-          class="relative h-[2px] block w-7 bg-black before:absolute before:top-[-8px] before:left-0 before:h-[2px] before:w-full before:bg-black before:content-[&quot;&quot;] before:transition-transform after:absolute after:top-[8px] after:left-0 after:h-[2px] after:w-full after:bg-black after:content-[&quot;&quot;] after:transition-transform">
+          class="relative h-[2px] block w-7 bg-white before:absolute before:top-[-8px] before:left-0 before:h-[2px] before:w-full before:bg-white before:content-[&quot;&quot;] before:transition-transform after:absolute after:top-[8px] after:left-0 after:h-[2px] after:w-full after:bg-white after:content-[&quot;&quot;] after:transition-transform"
+        >
         </span>
       </button>
     </header>
     <main class="min-h-[85vh] md:pt-48 pt-28 pb-10 lg:pb-20">
       <h1
         class="text-sm ml-16 mb-5 lg:mb-12 lg:mx-[5%] xl:mx-[8%] lg:opacity-70 lg:text-lg lg:font-bold font-medium"
-        >Contact us</h1
       >
+        Contact us
+      </h1>
       <div
-        class="flex flex-col lg:flex-row-reverse mx-12 gap-6 lg:mx-[5%] xl:mx-[8%] lg:gap-[2vw]">
-        <div class="rounded-[10px] border shadow-md lg:rounded-[50px]"
-          ><h5
+        class="flex flex-col lg:flex-row-reverse mx-12 gap-6 lg:mx-[5%] xl:mx-[8%] lg:gap-[2vw]"
+      >
+        <div class="rounded-[10px] border shadow-md lg:rounded-[50px]">
+          <h5
             class="mx-14 mb-12 mt-4 lg:mt-10 lg:text-xl lg:mx-24 lg:mb-9 font-bold opacity-70 text-xs"
-            >Request a call back, fill the form below and we will contact
-            you.</h5
           >
+            Request a call back, fill the form below and we will contact you.
+          </h5>
           <form class="px-4 pb-9 flex flex-col gap-5 lg:gap-8">
             <span class="flex gap-3"
               ><input
@@ -79,222 +86,224 @@
             <input
               type="number"
               placeholder="Phone / mobile"
-              class="pl-4 h-9 border rounded-[10px] w-full text-xs lg:text-xl lg:h-14" />
+              class="pl-4 h-9 border rounded-[10px] w-full text-xs lg:text-xl lg:h-14"
+            />
             <textarea
               placeholder="Description"
-              class="pl-4 h-20 border rounded-[10px] w-full text-xs lg:text-xl lg:h-[120px] py-7"></textarea>
+              class="pl-4 h-20 border rounded-[10px] w-full text-xs lg:text-xl lg:h-[120px] py-7"
+            ></textarea>
             <button
               class="bg-[#D0830F] text-white h-9 rounded-[10px] w-full text-xs lg:text-xl lg:h-14"
-              >Submit</button
             >
+              Submit
+            </button>
           </form>
         </div>
         <div class="flex flex-col gap-2 lg:gap-5">
           <span
-            class="flex gap-6 items-center px-8 border rounded-[10px] shadow-sm lg:px-16 py-11 pb-8">
+            class="flex gap-6 items-center px-8 border rounded-[10px] shadow-sm lg:px-16 py-11 pb-8"
+          >
             <span
-              class="flex items-center rounded-full lg:bg-[#C6C6C6] lg:h-[90px] lg:w-[90px] justify-center">
+              class="flex items-center rounded-full lg:bg-[#C6C6C6] lg:h-[90px] lg:w-[90px] justify-center"
+            >
               <svg
                 width="40"
                 height="38"
                 viewBox="0 0 40 38"
                 fill="none"
                 class="opacity-50 h-4 w-auto lg:opacity-100 lg:h-8 lg:w-20"
-                xmlns="http://www.w3.org/2000/svg">
+                xmlns="http://www.w3.org/2000/svg"
+              >
                 <path
                   d="M19.9062 9.0332C21.777 9.0332 23.5711 9.51483 24.8939 10.3721C26.2167 11.2294 26.9598 12.3922 26.9598 13.6046C26.9598 14.2049 26.7774 14.7994 26.4229 15.354C26.0684 15.9086 25.5489 16.4126 24.8939 16.8371C24.2389 17.2616 23.4613 17.5983 22.6055 17.828C21.7498 18.0578 20.8325 18.176 19.9062 18.176C18.0355 18.176 16.2414 17.6944 14.9186 16.8371C13.5958 15.9798 12.8527 14.817 12.8527 13.6046C12.8527 12.3922 13.5958 11.2294 14.9186 10.3721C16.2414 9.51483 18.0355 9.0332 19.9062 9.0332ZM19.9062 0.804688C25.1443 0.804688 30.1678 2.15325 33.8716 4.55369C37.5755 6.95414 39.6562 10.2099 39.6562 13.6046C39.6562 23.2045 19.9062 37.3759 19.9062 37.3759C19.9062 37.3759 0.15625 23.2045 0.15625 13.6046C0.15625 10.2099 2.23705 6.95414 5.94089 4.55369C9.64473 2.15325 14.6682 0.804688 19.9062 0.804688ZM19.9062 4.46181C16.1648 4.46181 12.5766 5.42506 9.93099 7.13967C7.28539 8.85427 5.79911 11.1798 5.79911 13.6046C5.79911 15.4332 5.79911 19.0903 19.9062 31.3599C34.0134 19.0903 34.0134 15.4332 34.0134 13.6046C34.0134 11.1798 32.5271 8.85427 29.8815 7.13967C27.2359 5.42506 23.6477 4.46181 19.9062 4.46181Z"
-                  fill="#070303" />
+                  fill="#070303"
+                />
               </svg>
             </span>
-            <p class="text-sm font-semibold lg:text-lg"
-              >15 Reality Avenue, Crown Estate, lekki peninsula, Lagos state.</p
-            >
+            <p class="text-sm font-semibold lg:text-lg">
+              15 Reality Avenue, Crown Estate, lekki peninsula, Lagos state.
+            </p>
           </span>
           <span
-            class="flex gap-6 items-center px-8 border rounded-[10px] shadow-sm lg:px-16 py-11 pb-8">
+            class="flex gap-6 items-center px-8 border rounded-[10px] shadow-sm lg:px-16 py-11 pb-8"
+          >
             <span
-              class="flex items-center rounded-full lg:bg-[#C6C6C6] lg:h-[90px] lg:w-[90px] justify-center">
+              class="flex items-center rounded-full lg:bg-[#C6C6C6] lg:h-[90px] lg:w-[90px] justify-center"
+            >
               <svg
                 width="45"
                 height="33"
                 viewBox="0 0 45 33"
                 class="opacity-50 h-4 w-4 lg:opacity-100 lg:h-8 lg:w-8"
                 fill="none"
-                xmlns="http://www.w3.org/2000/svg">
+                xmlns="http://www.w3.org/2000/svg"
+              >
                 <path
                   d="M38.362 0.632812H7.44531C5.68825 0.632812 4.00316 1.25987 2.76073 2.37603C1.5183 3.49219 0.820313 5.00603 0.820312 6.58452V26.4235C0.820313 28.002 1.5183 29.5159 2.76073 30.632C4.00316 31.7482 5.68825 32.3752 7.44531 32.3752H38.362C40.119 32.3752 41.8041 31.7482 43.0466 30.632C44.289 29.5159 44.987 28.002 44.987 26.4235V6.58452C44.987 5.00603 44.289 3.49219 43.0466 2.37603C41.8041 1.25987 40.119 0.632813 38.362 0.632812ZM36.8824 4.60062L22.9036 14.0241L8.9249 4.60062H36.8824ZM38.362 28.4074H7.44531C6.85963 28.4074 6.29793 28.1984 5.88379 27.8264C5.46964 27.4543 5.23698 26.9497 5.23698 26.4235V7.08049L21.5786 18.0911C21.9609 18.3487 22.4258 18.4879 22.9036 18.4879C23.3815 18.4879 23.8464 18.3487 24.2286 18.0911L40.5703 7.08049V26.4235C40.5703 26.9497 40.3377 27.4543 39.9235 27.8264C39.5094 28.1984 38.9477 28.4074 38.362 28.4074Z"
-                  fill="black" /></svg
+                  fill="black"
+                /></svg
             ></span>
 
             <p class="text-sm font-semibold lg:text-lg">Info@runamapp.com</p>
           </span>
           <span
-            class="flex gap-6 items-center px-8 border rounded-[10px] shadow-sm lg:px-16 py-11 pb-8">
+            class="flex gap-6 items-center px-8 border rounded-[10px] shadow-sm lg:px-16 py-11 pb-8"
+          >
             <span
-              class="flex items-center rounded-full lg:bg-[#C6C6C6] lg:h-[90px] lg:w-[90px] justify-center">
+              class="flex items-center rounded-full lg:bg-[#C6C6C6] lg:h-[90px] lg:w-[90px] justify-center"
+            >
               <svg
                 width="40"
                 height="43"
                 viewBox="0 0 40 43"
                 class="opacity-50 h-4 w-4 lg:opacity-100 lg:h-8 lg:w-8"
                 fill="none"
-                xmlns="http://www.w3.org/2000/svg">
+                xmlns="http://www.w3.org/2000/svg"
+              >
                 <path
                   d="M39.9897 29.3232L28.3252 27.9075L22.7475 33.7559C16.4641 30.4052 11.357 25.0502 8.16132 18.462L13.7612 12.5904L12.411 0.40625H0.215287C-1.06847 24.0318 17.4575 43.4568 39.9897 42.1107V29.3232Z"
-                  fill="black" /></svg
+                  fill="black"
+                /></svg
             ></span>
             <p class="text-sm font-semibold lg:text-lg">+234 706 2466 015</p>
           </span>
         </div>
       </div>
     </main>
-    <footer class="px-[10%] hidden lg:block pt-20 text-white">
-      <div class="bg-[#5C0404] px-40 pt-14 pb-5">
-        <div class="flex gap-2 justify-between md:text-sm">
-          <span class="flex flex-col">
-            <h6 class="mb-4 text-lg">This website</h6>
-            <a href="privacy-policy.html" class="hover:text-[#FA8809]">
-              Privacy policy
-            </a>
-            <a href="terms-of-service.html" class="hover:text-[#FA8809]">
-              Terms of service
-            </a>
-          </span>
-          <span class="flex flex-col">
-            <h6 class="mb-4 text-lg">Company</h6>
-            <a href="about-us.html" class="hover:text-[#FA8809]"> About us </a>
-            <a href="contact-us.html" class="hover:text-[#FA8809]">
-              Contact us
-            </a>
-            <a href="vision-statement.html" class="hover:text-[#FA8809]">
-              Vision
-            </a>
-          </span>
-          <span class="flex flex-col">
-            <h6 class="mb-4 text-lg">Services</h6>
-            <a href="" class="hover:text-[#FA8809]"> Airtime </a>
-            <a href="" class="hover:text-[#FA8809]"> Data </a>
-            <a href="" class="hover:text-[#FA8809]"> Bet wallet funding </a>
-            <a href="" class="hover:text-[#FA8809]"> Social boost </a>
-            <a href="" class="hover:text-[#FA8809]"> Music promotion </a>
-            <a href="" class="hover:text-[#FA8809]"> Business promotion </a>
-            <a href="" class="hover:text-[#FA8809]"> Cable TV </a>
-          </span>
-          <span class="flex flex-col">
-            <h6 class="mb-4 text-lg">We are social</h6>
-            <a
-              href="https://instagram.com/bash_anthoni?igshid=MzRlODBiNWFlZA=="
-              target="_blank"
-              class="hover:text-[#FA8809]">
-              Instagram
-            </a>
-            <a
-              href="https://x.com/runam_app?s=21&t=Xr1fqnb2YxybtdNqXcrAfA"
-              target="_blank"
-              class="hover:text-[#FA8809]">
-              Twitter
-            </a>
-            <a
-              href="https://www.tiktok.com/@runamstudios?_t=8gOWXF5FLd7&_r=1"
-              target="_blank"
-              class="hover:text-[#FA8809]">
-              Tiktok
-            </a>
-            <a
-              href="https://www.facebook.com/profile.php?id=100091592025265&mibextid=LQQJ4d"
-              target="_blank"
-              class="hover:text-[#FA8809]">
-              Facebook
-            </a>
-            <a
-              href="https://youtube.com/@runamstudio?si=rfdoITtAhJzGrSln"
-              target="_blank"
-              class="hover:text-[#FA8809]">
-              Youtube
-            </a>
-          </span>
-        </div>
-        <form class="flex gap-2 items-end pb-5">
-          <span>
-            <p>Subscribe to our news letter</p>
-            <input
-              type="email"
-              placeholder="Email"
-              class="h-12 w-72 pl-11 border-0 text-black" />
-          </span>
-          <button class="bg-[#FA8809] h-12 w-28">Submit</button>
-        </form>
-        <hr class="border-[#7B4040] mb-3" />
-        <p class="text-center text-[#B3B3B3] text-xs mb-5"
-          >Copyright 2023 Runam and Runup technologies</p
-        >
-      </div>
-    </footer>
-    <footer
-      class="px-6 bg-[#5C0404] text-[10px] pt-3 pb-5 text-white lg:hidden">
-      <div class="flex gap-2 justify-between">
-        <span class="flex flex-col">
-          <h6 class="mb-1">Services</h6>
-          <a href="" class="hover:text-[#FA8809]"> Airtime </a>
-          <a href="" class="hover:text-[#FA8809]"> Data </a>
-          <a href="" class="hover:text-[#FA8809]"> Bet wallet funding </a>
-          <a href="" class="hover:text-[#FA8809]"> Social boost </a>
-          <a href="" class="hover:text-[#FA8809]"> Music promotion </a>
-          <a href="" class="hover:text-[#FA8809]"> Business promotion </a>
-          <a href="" class="hover:text-[#FA8809]"> Cable TV </a>
-        </span>
-        <span class="flex flex-col">
-          <h6 class="mb-1">Company</h6>
-          <a href="about-us.html" class="hover:text-[#FA8809]"> About us </a>
-          <a href="contact-us.html" class="hover:text-[#FA8809]">
-            Contact us
-          </a>
-          <a href="vision-statement.html" class="hover:text-[#FA8809]">
-            Vision
-          </a>
-        </span>
-        <span class="flex flex-col">
-          <h6 class="mb-1">This website</h6>
-          <a href="privacy-policy.html" class="hover:text-[#FA8809]">
-            Privacy policy
-          </a>
-          <a href="terms-of-service.html" class="hover:text-[#FA8809]">
-            Terms of service
-          </a>
-        </span>
-
-        <span class="flex flex-col gap-2 items-center">
-          <h6 class="mb-1">We are social</h6>
-          <a
-            href="https://www.facebook.com/profile.php?id=100091592025265&mibextid=LQQJ4d"
-            target="_blank">
-            <img src="public/facebook.svg" alt="facebook icon"
-          /></a>
-          <a
-            href="https://instagram.com/bash_anthoni?igshid=MzRlODBiNWFlZA=="
-            target="_blank">
-            <img src="public/instagram.svg" alt="instagram icon" />
-          </a>
-          <a
-            href="https://youtube.com/@runamstudio?si=rfdoITtAhJzGrSln"
-            target="_blank">
-            <img src="public/youtube.svg" alt="youtube icon" />
-          </a>
-          <a
-            href="https://x.com/runam_app?s=21&t=Xr1fqnb2YxybtdNqXcrAfA"
-            target="_blank">
-            <img src="public/twitter.svg" alt="twitter icon" />
-          </a>
-          <a
-            href="https://www.tiktok.com/@runamstudios?_t=8gOWXF5FLd7&_r=1"
-            target="_blank">
-            <img src="public/tiktok.svg" alt="tiktok icon" />
-          </a>
-        </span>
-      </div>
-      <p class="text-center text-[#B3B3B3] text-[6px]"
-        >Copyright 2023 Runam and Runup technologies</p
+    <footer>
+      <div
+        class="bg-[#450E0E] lg:bg-[#4F0F0F] gap-16 pt-[38px] px-[52px] flex flex-col lg:flex-row lg:px-24 justify-between lg:mt-[105px] lg:mx-32 xl:mx-40"
       >
+        <span class="flex-1">
+          <h3
+            class="text-lg text-center text-white md:text-3xl mb-4 md:mb-14 mt-8 lg:mt-[101px] font-Righteous"
+          >
+            Download Runam app
+          </h3>
+          <span
+            class="flex gap-3 justify-center items-center lg:w-[29vw] max-w-96 mx-auto lg:max-w-none lg:mx-0"
+          >
+            <a
+              class="xl:w-[390px] sm:w-56 w-28"
+              href="https://play.google.com/store/apps/details?id=shop.lootapp.lootapp&pcampaignid=web_share"
+              target="_blank"
+              ><img
+                class="w-full"
+                src="public/monodat-mobile.png"
+                alt="link to Loot app on play store"
+              />
+            </a>
+            <a
+              class="xl:w-[390px] sm:w-56 w-28"
+              href="https://apps.apple.com/ng/app/loots/id6479205023"
+              target="_blank"
+              ><img
+                src="public/apple-store.png"
+                alt="link to Loot app on app store"
+            /></a> </span
+        ></span>
+        <div class="mx-auto mt-10 w-9/12">
+          <img src="public/loot-dasboard.png" alt="" class="mx-auto" />
+        </div>
+      </div>
+      <div
+        class="bg-[#4F0F0F] text-white py-9 px-7 lg:mx-16 lg:mb-16 md:px-14 lg:px-36 text-xs md:text-base z-10"
+      >
+        <div class="flex flex-col xl:flex-row gap-7 xl:gap-36 justify-between">
+          <span class="w-4/5 xl:w-1/2">
+            <h3 class="slackey text-xs mb-2 lg:text-xl font-Slackey">Runam</h3>
+            <p>
+              Runam is a bills payment app that provides a seamless and secure
+              platform for managing your financial transactions. The app
+              revolutionizes the way users handle payments, offering a
+              convenient solution for paying bills, purchasing data, and
+              performing other essential transactions. With a user-focused
+              approach, Runam ensures a reliable and efficient experience,
+              empowering individuals to stay in control of their finances while
+              enjoying a hassle-free journey.
+            </p>
+          </span>
+          <ul class="space-y-2 lg:space-y-3 shrink w-max">
+            <h3 class="slackey text-xs mb-2 lg:text-xl lg:mb-3 font-Slackey">
+              Quick links
+            </h3>
+            <li>
+              <a class="hover:underline whitespace-nowrap" href="/about-us"
+                >About us</a
+              >
+            </li>
+            <li>
+              <a
+                class="hover:underline whitespace-nowrap"
+                href="/privacy-policy"
+                >Privacy policy</a
+              >
+            </li>
+            <li>
+              <a class="hover:underline whitespace-nowrap" href="/contact-us"
+                >Contact us</a
+              >
+            </li>
+          </ul>
+          <div class="text-xs lg:text-xl shrink">
+            <div>
+              <h3 class="slackey mb-4 lg:mb-5 whitespace-nowrap font-Slackey">
+                Connect with us
+              </h3>
+              <div class="flex gap-3 mb-5 lg:mb-8">
+                <a
+                  href="https://youtube.com/@runamstudio?si=rfdoITtAhJzGrSln"
+                  target="_blank"
+                >
+                  <img alt="youtube icon" src="./public/yt.png" />
+                </a>
+                <a
+                  href="https://www.facebook.com/profile.php?id=100091592025265&mibextid=LQQJ4d"
+                  target="_blank"
+                >
+                  <img alt="facebook icon" src="./public/fb.png" />
+                </a>
+                <a
+                  href="https://instagram.com/bash_anthoni?igshid=MzRlODBiNWFlZA=="
+                  target="_blank"
+                >
+                  <img alt="instagram icon" src="./public/in.png" />
+                </a>
+                <a href="mailto:info@runam.xyz"
+                  ><img alt="email icon" src="./public/mail.png"
+                /></a>
+              </div>
+              <h3 class="slackey mb-2 lg:mb-8 font-Slackey">Download app</h3>
+              <div class="flex gap-3">
+                <a href="#">
+                  <img
+                    alt="monostore icon"
+                    src="./public/monodat-mobile.png"
+                    class="w-16 h-7 lg:w-28 lg:h-12"
+                  />
+                </a>
+                <a
+                  href="https://apps.apple.com/ng/app/huntgame/id6502562121"
+                  target="_blank"
+                >
+                  <img
+                    alt="app store icon"
+                    src="./public/apple-store.png"
+                    class="w-16 h-7 lg:w-28 lg:h-12"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="righteous text-[#9E9E9E] text-center mt-[90px] mb-2">
+          <!-- <p class="font-extrabold">Huntgames limited</p> -->
+          <p class="text-xs">
+            © 2024, All rights reserved
+            <span class="text-sm">Runam and Runup technologies limited</span>
+          </p>
+        </div>
+      </div>
     </footer>
   </body>
   <script type="module" src="./main.js"></script>
